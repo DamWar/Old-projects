@@ -1,0 +1,12 @@
+Sample size: 100000 points generated for each estimation
+0. Estimation of Pi = 3.121888
+1. Estimation of Pi = 3.121754
+2. Estimation of Pi = 3.121375
+3. Estimation of Pi = 3.121031
+4. Estimation of Pi = 3.120774
+5. Estimation of Pi = 3.120680
+6. Estimation of Pi = 3.120737
+7. Estimation of Pi = 3.120643
+8. Estimation of Pi = 3.120224
+9. Estimation of Pi = 3.120417
+Average of those estimations is 3.120952

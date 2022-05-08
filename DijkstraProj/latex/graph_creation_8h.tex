@@ -1,0 +1,64 @@
+\doxysection{graph\+Creation.\+h File Reference}
+\label{graph_creation_8h}\index{graphCreation.h@{graphCreation.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ int, double $>$ \textbf{ adj\+Pair}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ add\+To\+Graph} (std\+::vector$<$ \textbf{ adj\+Pair} $>$ adj[$\,$], std\+::vector$<$ int $>$ \&vertices, int u, int v, double weight)
+\item 
+bool \textbf{ create\+Graph\+Based\+On\+File} (std\+::vector$<$ \textbf{ adj\+Pair} $>$ adj[$\,$], std\+::vector$<$ int $>$ \&vertices, std\+::string source\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{graph_creation_8h_a29555f7bef9342e683df6c52240fd61c}} 
+\index{graphCreation.h@{graphCreation.h}!adjPair@{adjPair}}
+\index{adjPair@{adjPair}!graphCreation.h@{graphCreation.h}}
+\doxysubsubsection{adjPair}
+{\footnotesize\ttfamily typedef std\+::pair$<$int, double$>$ \textbf{ adj\+Pair}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{graph_creation_8h_ab83612147b479ef4bb014602b8a8daad}} 
+\index{graphCreation.h@{graphCreation.h}!addToGraph@{addToGraph}}
+\index{addToGraph@{addToGraph}!graphCreation.h@{graphCreation.h}}
+\doxysubsubsection{addToGraph()}
+{\footnotesize\ttfamily void add\+To\+Graph (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \textbf{ adj\+Pair} $>$}]{adj[$\,$],  }\item[{std\+::vector$<$ int $>$ \&}]{vertices,  }\item[{int}]{u,  }\item[{int}]{v,  }\item[{double}]{weight }\end{DoxyParamCaption})}
+
+Function to add vertices and edges to a graph. 
+\begin{DoxyParams}{Parameters}
+{\em adj\mbox{[}$\,$\mbox{]}} & -\/ vector of pairs of number of vertex and weight towards adjacent vertex (graph) \\
+\hline
+{\em vertices} & -\/ vector of vertices \\
+\hline
+{\em u} & -\/ first vertex \\
+\hline
+{\em v} & -\/ second vertex \\
+\hline
+{\em weight} & -\/ edge weight first -\/$>$ second \\
+\hline
+\end{DoxyParams}
+\mbox{\label{graph_creation_8h_ab9049ccd9e3ad030edccb4200b572c87}} 
+\index{graphCreation.h@{graphCreation.h}!createGraphBasedOnFile@{createGraphBasedOnFile}}
+\index{createGraphBasedOnFile@{createGraphBasedOnFile}!graphCreation.h@{graphCreation.h}}
+\doxysubsubsection{createGraphBasedOnFile()}
+{\footnotesize\ttfamily bool create\+Graph\+Based\+On\+File (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \textbf{ adj\+Pair} $>$}]{adj[$\,$],  }\item[{std\+::vector$<$ int $>$ \&}]{vertices,  }\item[{std\+::string}]{source\+File\+Name }\end{DoxyParamCaption})}
+
+Function to create graph based on a given file. 
+\begin{DoxyParams}{Parameters}
+{\em adj\mbox{[}$\,$\mbox{]}} & -\/ vector of pairs of number of vertex and weight towards adjacent vertex (graph) \\
+\hline
+{\em vertices} & -\/ vector of vertices \\
+\hline
+{\em source\+File\+Name} & -\/ path to file that is used to generate a graph \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,2 @@
+Game in tcod Python3 that I started writing based on https://rogueliketutorials.com/tutorials/tcod/v2/
+I started writing it without using git and made some bad decisions about naming so I decided to rewrite it and then continue properly(work in progress).

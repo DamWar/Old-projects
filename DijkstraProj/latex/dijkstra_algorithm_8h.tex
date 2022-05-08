@@ -1,0 +1,72 @@
+\doxysection{dijkstra\+Algorithm.\+h File Reference}
+\label{dijkstra_algorithm_8h}\index{dijkstraAlgorithm.h@{dijkstraAlgorithm.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ int, double $>$ \textbf{ adj\+Pair}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ dijkstra} (std\+::vector$<$ \textbf{ adj\+Pair} $>$ adj[$\,$], std\+::vector$<$ int $>$ \&vertices, int find\+For, long long unsigned int adj\+Size, std\+::string \&output)
+\item 
+bool \textbf{ find\+Paths\+From\+Vertices} (std\+::vector$<$ \textbf{ adj\+Pair} $>$ adj[$\,$], std\+::vector$<$ int $>$ \&vertices, long long unsigned int adj\+Size, std\+::string source\+File\+Name, std\+::string result\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\label{dijkstra_algorithm_8h_a29555f7bef9342e683df6c52240fd61c}} 
+\index{dijkstraAlgorithm.h@{dijkstraAlgorithm.h}!adjPair@{adjPair}}
+\index{adjPair@{adjPair}!dijkstraAlgorithm.h@{dijkstraAlgorithm.h}}
+\doxysubsubsection{adjPair}
+{\footnotesize\ttfamily typedef std\+::pair$<$int, double$>$ \textbf{ adj\+Pair}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{dijkstra_algorithm_8h_a1f0423ff05c75432cc8cdcda5da9804c}} 
+\index{dijkstraAlgorithm.h@{dijkstraAlgorithm.h}!dijkstra@{dijkstra}}
+\index{dijkstra@{dijkstra}!dijkstraAlgorithm.h@{dijkstraAlgorithm.h}}
+\doxysubsubsection{dijkstra()}
+{\footnotesize\ttfamily void dijkstra (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \textbf{ adj\+Pair} $>$}]{adj[$\,$],  }\item[{std\+::vector$<$ int $>$ \&}]{vertices,  }\item[{int}]{find\+For,  }\item[{long long unsigned int}]{adj\+Size,  }\item[{std\+::string \&}]{output }\end{DoxyParamCaption})}
+
+Function that implements Dijkstra\textquotesingle{}s algorithm and shows the path.~\newline
+ Dijkstra\textquotesingle{}s algorithm (or Dijkstra\textquotesingle{}s Shortest Path First) is an algorithm for finding the shortest paths between nodes in a graph.(src {\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Dijkstra\%27s\+\_\+algorithm}}) 
+\begin{DoxyParams}{Parameters}
+{\em adj\mbox{[}$\,$\mbox{]}} & -\/ vector of pairs of number of vertex and weight towards adjacent vertex (graph) \\
+\hline
+{\em vertices} & -\/ vector of vertices \\
+\hline
+{\em find\+For} & -\/ index of vertex to search from \\
+\hline
+{\em adj\+Size} & -\/ size of vector adj \\
+\hline
+{\em output} & -\/ string containing shortest paths and their distances \\
+\hline
+\end{DoxyParams}
+\mbox{\label{dijkstra_algorithm_8h_a54f13b9bb2588d9d9eaee05374793f3f}} 
+\index{dijkstraAlgorithm.h@{dijkstraAlgorithm.h}!findPathsFromVertices@{findPathsFromVertices}}
+\index{findPathsFromVertices@{findPathsFromVertices}!dijkstraAlgorithm.h@{dijkstraAlgorithm.h}}
+\doxysubsubsection{findPathsFromVertices()}
+{\footnotesize\ttfamily bool find\+Paths\+From\+Vertices (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \textbf{ adj\+Pair} $>$}]{adj[$\,$],  }\item[{std\+::vector$<$ int $>$ \&}]{vertices,  }\item[{long long unsigned int}]{adj\+Size,  }\item[{std\+::string}]{source\+File\+Name,  }\item[{std\+::string}]{result\+File\+Name }\end{DoxyParamCaption})}
+
+Function that reads vertices from a file to search from and uses dijkstra function on an existing graph to write result to a file. 
+\begin{DoxyParams}{Parameters}
+{\em adj\mbox{[}$\,$\mbox{]}} & -\/ vector of pairs of number of vertex and weight towards adjacent vertex (graph) \\
+\hline
+{\em vertices} & -\/ vector of vertices \\
+\hline
+{\em adj\+Size} & -\/ size of vector adj \\
+\hline
+{\em source\+File\+Name} & -\/ path to file containing vertices to search from \\
+\hline
+{\em result\+File\+Name} & -\/ path to file that should store the result \\
+\hline
+\end{DoxyParams}

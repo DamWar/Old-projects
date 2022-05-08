@@ -1,0 +1,69 @@
+\doxysection{parameters\+Handling\+F.\+h File Reference}
+\label{parameters_handling_f_8h}\index{parametersHandlingF.h@{parametersHandlingF.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ assign\+Operations} (char $\ast$f\+Name, std\+::string \&name\+Var, std\+::string error\+Message)
+\item 
+void \textbf{ check\+Flag} (char $\ast$flag, char $\ast$f\+Name, std\+::string \&in\+Graph, std\+::string \&in\+Vertices, std\+::string \&out\+Result)
+\item 
+bool \textbf{ assign\+I\+Ofile\+Names} (int argc, char $\ast$argv[$\,$], std\+::string \&in\+Graph, std\+::string \&in\+Vertices, std\+::string \&out\+Result)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{parameters_handling_f_8h_ad2bee1a9c2d7215d3fbed96f84405a94}} 
+\index{parametersHandlingF.h@{parametersHandlingF.h}!assignIOfileNames@{assignIOfileNames}}
+\index{assignIOfileNames@{assignIOfileNames}!parametersHandlingF.h@{parametersHandlingF.h}}
+\doxysubsubsection{assignIOfileNames()}
+{\footnotesize\ttfamily bool assign\+I\+Ofile\+Names (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv[$\,$],  }\item[{std\+::string \&}]{in\+Graph,  }\item[{std\+::string \&}]{in\+Vertices,  }\item[{std\+::string \&}]{out\+Result }\end{DoxyParamCaption})}
+
+Function that handles program\textquotesingle{}s arguments. If none are specified, it prints explanation about program\textquotesingle{}s usage 
+\begin{DoxyParams}{Parameters}
+{\em argc} & -\/ number of arguments \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & -\/ array of arguments \\
+\hline
+{\em in\+Graph} & -\/ string for graph\textquotesingle{}s input file name \\
+\hline
+{\em in\+Vertices} & -\/ string for vertices\textquotesingle{}s input file name \\
+\hline
+{\em out\+Result} & -\/ string for result\textquotesingle{}s output file name \\
+\hline
+\end{DoxyParams}
+\mbox{\label{parameters_handling_f_8h_af70ed182fd0e18d5bd4139cfeb51fcba}} 
+\index{parametersHandlingF.h@{parametersHandlingF.h}!assignOperations@{assignOperations}}
+\index{assignOperations@{assignOperations}!parametersHandlingF.h@{parametersHandlingF.h}}
+\doxysubsubsection{assignOperations()}
+{\footnotesize\ttfamily void assign\+Operations (\begin{DoxyParamCaption}\item[{char $\ast$}]{f\+Name,  }\item[{std\+::string \&}]{name\+Var,  }\item[{std\+::string}]{error\+Message }\end{DoxyParamCaption})}
+
+Function to assign path to file to a given string. If there is no path (nullptr), function prints error message. 
+\begin{DoxyParams}{Parameters}
+{\em f\+Name} & -\/ path to a file \\
+\hline
+{\em name\+Var} & -\/ variable to store path if it exists \\
+\hline
+{\em erroe\+Message} & -\/ a message to be printed in case there is no path specified \\
+\hline
+\end{DoxyParams}
+\mbox{\label{parameters_handling_f_8h_a05ddf8cecdd7b380769758ce99c306a6}} 
+\index{parametersHandlingF.h@{parametersHandlingF.h}!checkFlag@{checkFlag}}
+\index{checkFlag@{checkFlag}!parametersHandlingF.h@{parametersHandlingF.h}}
+\doxysubsubsection{checkFlag()}
+{\footnotesize\ttfamily void check\+Flag (\begin{DoxyParamCaption}\item[{char $\ast$}]{flag,  }\item[{char $\ast$}]{f\+Name,  }\item[{std\+::string \&}]{in\+Graph,  }\item[{std\+::string \&}]{in\+Vertices,  }\item[{std\+::string \&}]{out\+Result }\end{DoxyParamCaption})}
+
+Function that checks given flags and processes them accordingly. 
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ variable that defines what to do with f\+Name \\
+\hline
+{\em f\+Name} & -\/ variable that stores name of one of the files \\
+\hline
+{\em in\+Graph} & -\/ string for graph\textquotesingle{}s input file name \\
+\hline
+{\em in\+Vertices} & -\/ string for vertices\textquotesingle{}s input file name \\
+\hline
+{\em out\+Result} & -\/ string for result\textquotesingle{}s output file name \\
+\hline
+\end{DoxyParams}
